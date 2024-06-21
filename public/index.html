@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RESTAURANT CHATBOT</title>
+    <script
+      src="https://cdn.socket.io/4.6.0/socket.io.min.js"
+      integrity="sha384-c79GN5VsunZvi+Q/WObgk2in0CbZsHnjEqvFxC5DxHn9lTfNce2WW6h2pH6u/kF+"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1><span class="see">WELCOME </span>(LOGIN TO ORDER)</h1>
+      </header>
+      <main class="main">
+        <!-- <form action="/" method="post" id="new-user">
+          <p id="err"></p>
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name" class="input" />
+          <label for="username">Username</label>
+          <input
+            type="text"
+            name="username"
+            id="username"
+            class="input"
+            required
+          />
+          <input type="submit" value="Chat" class="chat-btn" />
+        </form>
+        <section style="display: none" id="main"> -->
+          <div id="messages"></div>
+          <div class="send-div">  
+            <input
+            type="text"
+            class="chat-input"
+            placeholder="Type your messages..."
+            id="msg"
+            autofocus
+            />
+            <button id="btn" class="send-btn">Send</button>
+          </div>
+        </section>
+      </main>
+      <footer>
+      </footer>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
